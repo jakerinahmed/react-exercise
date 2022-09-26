@@ -1,17 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 function Like () {
 
-    const initialUnliked = 'Unliked'
-    const [like, setLike] = useState(initialUnliked)
+    // const initialUnliked = 'Unliked'
+    // const [like, setLike] = useState(initialUnliked)
 
-    function giveLike () {
-        setLike('Liked')
-    }
-
-    function removeLike () {
-        setLike('Unliked')
-    }
 
     function resetLike (e) {
         if (e.target.textContent === "Unliked") {
