@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Like from './Like';
 
 const Song = () => {
-  const [song, setSong] = useState([
+  const [song] = useState([
     { name: 'Lose Yourself'},
     { name: 'Not Afraid'},
     { name: 'Love The Way You Lie'}
