@@ -15,14 +15,19 @@ const Song = () => {
 
   return (
     <table style={{ border: "1px solid black", width: "100vw", textAlign: "center" }}>
+
       <thead>
+
         <tr>
           <th>Popular tracks</th>
         </tr>
+
       </thead>
+
       <tbody>
         { renderRows() }
       </tbody>
+      
     </table>
   );
 };
