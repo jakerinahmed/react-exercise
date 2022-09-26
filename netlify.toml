@@ -1,5 +1,6 @@
 [build]
-    CI= npm run build
+    command = "npm run build" # how to trigger a build
+    CI = npm run build
     publish = "/build" # what folder to publish 
 
 [[redirects]]
