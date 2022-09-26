@@ -1,6 +1,5 @@
 import React from 'react'
 import Artists from './components/Artists'
-import Like from './components/Like'
 import Song from './components/Music'
 
 
