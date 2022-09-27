@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
-function Like () {
+function Like() {
 
 
     const [like, setLike] = useState(false)
@@ -16,10 +16,10 @@ function Like () {
 
     return (
         <div>
-            <button 
-            role='switch'
-            aria-checked={like}
-            onClick={resetLike}
+            <button
+                role='switch'
+                aria-checked={like}
+                onClick={resetLike}
             >
                 Unliked
             </button>

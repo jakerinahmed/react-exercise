@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import Like from './Like';
+import React from 'react';
+import Like from '../Like';
 
 const Song = () => {
-  const [song] = useState([
-    { name: 'Lose Yourself'},
-    { name: 'Not Afraid'},
-    { name: 'Love The Way You Lie'}
-
-  ])
+  const track = [
+    { name: 'Lose Yourself' },
+    { name: 'Not Afraid' },
+    { name: 'Love The Way You Lie' },
+    { name: 'Toy Soldiers' }
+  ]
 
   const renderRows = () => {
-    return song.map(p => <tr><td>{p.name}</td><td><Like/></td></tr>)
+    return track.map(songs => <tr><td>{songs.name}</td><td><Like /></td></tr>)
   }
 
   return (
@@ -25,9 +25,9 @@ const Song = () => {
       </thead>
 
       <tbody>
-        { renderRows() }
+        {renderRows()}
       </tbody>
-      
+
     </table>
   );
 };

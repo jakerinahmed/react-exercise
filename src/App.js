@@ -1,13 +1,13 @@
 import React from 'react'
-import Artists from './components/Artists'
-import Song from './components/Music'
 
+import { Artists, Song, Album } from './components'
 
-const App = (props) => {
+const App = () => {
   return (
     <React.Fragment>
-      <Artists/>
-    <Song/>
+      <Artists />
+      <Song />
+      <Album />
     </React.Fragment>
   )
 }
