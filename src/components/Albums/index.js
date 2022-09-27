@@ -14,7 +14,7 @@ const Album = () => {
   }
 
   return (
-    <table style={{ border: "1px solid black", width: "100vw", textAlign: "center" }}>
+    <table role='table' style={{ border: "1px solid black", width: "100vw", textAlign: "center" }}>
 
       <thead>
 
