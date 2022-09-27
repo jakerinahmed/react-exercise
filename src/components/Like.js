@@ -1,13 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function Like () {
 
-    // const initialUnliked = 'Unliked'
-    // const [like, setLike] = useState(initialUnliked)
 
+    const [like, setLike] = useState(false)
 
-    function resetLike (e) {
-        if (e.target.textContent === "Unliked") {
+    const resetLike = (e) => {
+        setLike(!like)
+        if (!like) {
             e.target.textContent = 'Liked'
         } else {
             e.target.textContent = 'Unliked'
@@ -16,7 +16,11 @@ function Like () {
 
     return (
         <div>
-            <button onClick={resetLike}>
+            <button 
+            role='switch'
+            aria-checked={like}
+            onClick={resetLike}
+            >
                 Unliked
             </button>
         </div>
