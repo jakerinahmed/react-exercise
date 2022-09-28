@@ -1,5 +1,5 @@
 import React from 'react';
-import Like from '../Like';
+import Like from '../../components/Like';
 
 const Song = () => {
   const track = [

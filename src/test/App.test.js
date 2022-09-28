@@ -9,7 +9,7 @@ describe('App', () => {
   });
 
   test("renders h1 tag: Eminem", () => {
-    const title = screen.getByRole('title');
+    const title = screen.getByTitle('Eminem');
     expect(title.textContent).toContain("Eminem");
   });
 
