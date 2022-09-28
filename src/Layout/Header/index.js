@@ -5,7 +5,7 @@ import { BackButton} from '../../components'
 
 function Header() {
 
-  const activeClass = (({ isActive }) => isActive ? 'current' : undefined)
+  const activeClass = (({ isActive }) => isActive ? 'current' : 'notActive')
 
   return (
 

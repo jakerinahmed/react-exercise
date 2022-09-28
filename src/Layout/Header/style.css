@@ -1,4 +1,21 @@
 .current {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    background-color: magenta;
+    text-decoration: none;
+    color:yellow;
 }
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: yellow;
+    height: 15vh;
+}
+
+.notActive {
+    color: magenta
+}
+
+
