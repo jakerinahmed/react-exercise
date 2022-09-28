@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import { Artists } from './components'
 import { Header } from './Layout'
-import { Album, Song } from './pages'
+import { Album, Song, NotFound } from './pages'
 
 const App = () => {
 
@@ -33,6 +33,7 @@ const App = () => {
         <Route path='/' element={<Artists />} />
         <Route path='/tracks' element={<Song />} />
         <Route path='/albums' element={<Album />} />
+        <Route path='*' element={<NotFound/>} />
       </Routes>
     </div>
   )
